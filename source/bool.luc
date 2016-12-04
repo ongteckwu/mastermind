@@ -1,0 +1,17 @@
+//8-bit boolean module
+module bool (
+    input alufn30[4],
+    input a[8],
+    input b[8],
+    output out[8]
+    
+  ) {
+
+  var i;
+  
+  always {
+    for (i = 0; i < 8; i++) {
+        out[i] = alufn30[c{b[i],a[i]}];
+    } 
+  }
+}
